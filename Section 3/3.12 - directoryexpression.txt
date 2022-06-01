@@ -1,0 +1,12 @@
+@concat('raw',
+'/', 
+substring(item().name,0, indexof(item().name,'.')),
+'/',
+formatDateTime(convertFromUtc(utcnow(), 'South Africa Standard Time'), 'yyyy-MM-dd'),
+'/',
+formatDateTime(convertFromUtc(utcnow(), 'South Africa Standard Time'), 'HH'),
+'/',
+formatDateTime(convertFromUtc(utcnow(), 'South Africa Standard Time'), 'mm'),
+'/',
+formatDateTime(convertFromUtc(utcnow(), 'South Africa Standard Time'), 'ss')
+)
